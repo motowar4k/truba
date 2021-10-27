@@ -95,15 +95,15 @@ background-color: white;
 }
 .current-operand{
     position: relative;
-    margin-top: 20px;
+    margin-top: 12px;
     width: 350px;
-    height: 50px;
+    height: 65px;
     margin-bottom: 60px;
-    font-size: 44px;
+    font-size: 35px;
     font-family: "Poppins";
     text-align: right;
     font-weight: 600;
-    overflow-x:auto;
+    overflow-x: auto;
 }
 .cee{
     border: none;
