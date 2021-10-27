@@ -18,11 +18,11 @@ class Calculator {
 
     appendNumber(number) {// добавление числа на экран
 
-        /*if (this.currentOperand.length < 7) {
+        if (this.currentOperand.length < 7) {
             if (number === '.' && this.currentOperand.includes('.')) return
 
             this.currentOperand = this.currentOperand.toString() + number.toString()
-        }*/
+        }
     }
 
 
@@ -76,8 +76,7 @@ class Calculator {
 
     updateDisplay() {//ОБНОВЛЕНИЕ ДИСПЛЕЯ
         if (this.previousOperand === '')
-            this.currentOperandTextElement.innerText =
-                this.currentOperand
+            this.currentOperandTextElement.innerText = this.currentOperand.slice(0, 12);
         this.previousOperandTextElement.innerText = this.previousOperand
 
 
