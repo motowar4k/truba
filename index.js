@@ -68,6 +68,7 @@ class Calculator {
             this.currentOperand = computation
         }
         if (this.currentOperand.length >= 9) {
+            computation = computation.slice(0, 7);
             this.currentOperand = computation.toExponential()
         }
         this.operation = undefined
@@ -82,7 +83,7 @@ class Calculator {
 
         if (this.operation != null) {
             this.previousOperandTextElement.innerText =
-                `${this.previousOperand} ${this.operation} ${this.currentOperand}`.slice(0, 12);
+                `${this.previousOperand} ${this.operation} ${this.currentOperand}`
         } else {
             this.previousOperandTextElement.innerText = ''
         }
