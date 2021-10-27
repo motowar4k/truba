@@ -103,6 +103,7 @@ background-color: white;
     font-family: "Poppins";
     text-align: right;
     font-weight: 600;
+    overflow-x:auto;
 }
 .cee{
     border: none;
