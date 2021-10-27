@@ -76,7 +76,7 @@ class Calculator {
 
     updateDisplay() {//ОБНОВЛЕНИЕ ДИСПЛЕЯ
         if (this.previousOperand === '')
-            this.currentOperandTextElement.innerText = this.currentOperand.toString().slice(0, 12);
+            this.currentOperandTextElement.innerText = 1111;
         this.previousOperandTextElement.innerText = this.previousOperand
 
 
