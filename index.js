@@ -18,11 +18,11 @@ class Calculator {
 
     appendNumber(number) {// добавление числа на экран
 
-        if (this.currentOperand.length < 7) {
+        /*if (this.currentOperand.length < 7) {
             if (number === '.' && this.currentOperand.includes('.')) return
 
             this.currentOperand = this.currentOperand.toString() + number.toString()
-        }
+        }*/
     }
 
 
