@@ -76,13 +76,13 @@ class Calculator {
 
     updateDisplay() {//ОБНОВЛЕНИЕ ДИСПЛЕЯ
         if (this.previousOperand === '')
-            this.currentOperandTextElement.innerText = 1111;
+            this.currentOperandTextElement.innerText = this.currentOperand
         this.previousOperandTextElement.innerText = this.previousOperand
 
 
         if (this.operation != null) {
             this.previousOperandTextElement.innerText =
-                `${this.previousOperand} ${this.operation} ${this.currentOperand}`
+                `${this.previousOperand} ${this.operation} ${this.currentOperand}`.slice(0, 12);
         } else {
             this.previousOperandTextElement.innerText = ''
         }
